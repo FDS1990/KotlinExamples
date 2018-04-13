@@ -20,10 +20,9 @@ class esempio_thread(private var valore:Int):Runnable
 fun main(args:Array<String>)
 {
 
-    var runnable_exe:Runnable
-    runnable_exe=esempio_thread(2)
-    
+    var runnable_exe:Runnable=esempio_thread(2)
     var t=Thread(runnable_exe)
+    
     t.start()
     
 
