@@ -10,7 +10,7 @@ class MyView : View() {
     init {
         with(root) {
             this += Button("Press Me").apply {
-                action { println("Button pressed!") }
+                action { println("Hello world!") }
             }
         }
     }
