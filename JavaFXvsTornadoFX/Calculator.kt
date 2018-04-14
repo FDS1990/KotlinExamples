@@ -10,7 +10,6 @@ class MyView : View() {
     init {
         with(root) {
             this += Button("Press Me").apply {
-                textFill = Color.RED
                 action { println("Button pressed!") }
             }
         }
