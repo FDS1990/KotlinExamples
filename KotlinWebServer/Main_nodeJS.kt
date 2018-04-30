@@ -14,7 +14,7 @@ fun main(args: Array<String>)
 
         res.type("text/plain")
 
-        res.send("May the force be with you!")
+        res.send("Sono nella root directory del webserver")
 
     })
 
@@ -23,7 +23,7 @@ fun main(args: Array<String>)
     app.listen(3000, 
     {
 
-        println("Listening on port 3000")
+        println("Ascolto su porta 3000")
 
     })
 
