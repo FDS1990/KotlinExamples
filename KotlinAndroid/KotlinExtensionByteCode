@@ -1,0 +1,36 @@
+public _$_findCachedViewById(I)Landroid/view/View;
+    ALOAD 0
+    GETFIELD com/example/frank/dummyid/LoginActivity._$_findViewCache : Ljava/util/HashMap;
+    IFNONNULL L0
+    ALOAD 0
+    NEW java/util/HashMap
+    DUP
+    INVOKESPECIAL java/util/HashMap.<init> ()V
+    PUTFIELD com/example/frank/dummyid/LoginActivity._$_findViewCache : Ljava/util/HashMap;
+   L0
+    ALOAD 0
+    GETFIELD com/example/frank/dummyid/LoginActivity._$_findViewCache : Ljava/util/HashMap;
+    ILOAD 1
+    INVOKESTATIC java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+    INVOKEVIRTUAL java/util/HashMap.get (Ljava/lang/Object;)Ljava/lang/Object;
+    CHECKCAST android/view/View
+    ASTORE 2
+    ALOAD 2
+    IFNONNULL L1
+    ALOAD 0
+    ILOAD 1
+    INVOKEVIRTUAL android/support/v4/app/FragmentActivity.findViewById (I)Landroid/view/View;
+    ASTORE 2
+    ALOAD 0
+    GETFIELD com/example/frank/dummyid/LoginActivity._$_findViewCache : Ljava/util/HashMap;
+    ILOAD 1
+    INVOKESTATIC java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+    ALOAD 2
+    INVOKEVIRTUAL java/util/HashMap.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    POP
+   L1
+    ALOAD 2
+    ARETURN
+    MAXSTACK = 3
+    MAXLOCALS = 3
+
