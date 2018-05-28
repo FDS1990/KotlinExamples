@@ -9,7 +9,7 @@
   }
   function main$lambda_0() 
   {
-    println('Ascolto sulla porta 3000');
+    println('Ascolto su porta 3000');
   }
   function main(args) {
   
