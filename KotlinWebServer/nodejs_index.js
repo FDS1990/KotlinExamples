@@ -9,10 +9,10 @@
   }
   function main$lambda_0() 
   {
-    println('Listening on port 3000');
+    println('Ascolto sulla porta 3000');
   }
   function main(args) {
-    println('Kotlin and Javascript <3');
+  
     var express = require('express');
     var app = express();
     app.get('/', main$lambda);
