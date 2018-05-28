@@ -3,7 +3,7 @@ import io.ktor.http.*
 import io.ktor.response.*
 import io.ktor.routing.*
 import io.ktor.server.engine.*
-import io.ktor.server.netty.*
+import io.ktor.server.tomcat.*
 
 fun main(args: Array<String>) {
     val server = embeddedServer(Tomcat, port = 8080) {
